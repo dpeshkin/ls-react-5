@@ -1,8 +1,8 @@
 let listeners = [];
 export let isAuthorized = false;
 
-const EMAIL = 'student@loftschool.ru';
-const PASSWORD = '123';
+const EMAIL = "student@loftschool.ru";
+const PASSWORD = "123";
 
 export const authorizeUser = (email, password) => {
   isAuthorized = email === EMAIL && password === PASSWORD;

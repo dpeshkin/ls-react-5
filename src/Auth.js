@@ -1,8 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class Auth extends Component {
   render() {
-    return null;
+    return (
+      <form action="">
+        <input type="text" />
+        <input type="text" />
+      </form>
+    );
   }
 }
 
