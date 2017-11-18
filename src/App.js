@@ -25,7 +25,7 @@ class App extends Component {
   };
 
   render() {
-    const isAutorized = this.state.isAuthorized;
+    const isAuthorized = this.state.isAuthorized;
     return (
       <div>
         <nav>
@@ -47,12 +47,15 @@ class App extends Component {
         <hr />
         <Switch>
           <Route exact path="/" component={Home} />
-          {isAutorized ? (
+          {isAuthorized ? (
             <Route path="/private" component={Private} />
           ) : (
             <Redirect from="/private" to="/auth" />
           )}
-          <Route path="/auth" component={Auth} />
+          <Route
+            path="/auth"
+            render={props => <Auth {...props} isAuthorized={isAuthorized} />}
+          />
           <Route path="/public" component={Public} />
           <Redirect from="*" to="/" />
         </Switch>

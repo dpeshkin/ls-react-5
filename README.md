@@ -14,4 +14,26 @@
 
 Компонент на странице `auth` так же должен выводить предупреждение о неправильном пароле или почте.
 
-Для работы с авторизацией в коде намерено оставлен компонент AuthorizeApi, и логика в компоненте App для работы с ним. В компоненте `Auth` страницы `/auth` нужно дописать логику работы с этим модулем.
+Для работы
+
+
+
+SR-Snippets
+
+Snippet	Renders
+imr	Import React
+imrc	Import React / Component
+impt	Import PropTypes
+cc	Class Component
+ccc	Class Component With Constructor
+sfc	Stateless Function Component
+cdm	componentDidMount
+cwm	componentWillMount
+cwrp	componentWillReceiveProps
+scu	shouldComponentUpdate
+cwu	componentWillUpdate
+cdu	componentDidUpdate
+cwu	componentWillUpdate
+cdc	componentDidCatch
+ss	setState
+ren	render
